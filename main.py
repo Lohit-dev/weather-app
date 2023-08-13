@@ -12,4 +12,4 @@ if weather_data.json()["cod"] == "404":
 else:
     weather = weather_data.json()["weather"][0]["main"]
     temp =weather_data.json()["main"]["temp"]
-    print(f"The weather in {city} is {weather} and the temperature is {temp} Kelvin")
+    print(f"The weather in {city} is {weather} and the temperature is {round(temp-273.15)}C")
